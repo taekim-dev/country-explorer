@@ -7,14 +7,21 @@ import "./LandingPage.css";
 function LandingPage() {
   const [countries, setCountries] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-
+  
   useEffect(() => {
-    const fetchCountries = async () => {
-      const response = await axios.get("https://restcountries.com/v2/all");
-      setCountries(response.data);
-    };
-    fetchCountries();
+    const storedCountries = JSON.parse(localStorage.getItem("countries"));
+    if (storedCountries){
+      setCountries(storedCountries);
+    }else{
+      const fetchCountries = async () => {
+        const response = await axios.get("https://restcountries.com/v2/all");
+        setCountries(response.data);
+        localStorage.setItem("countries", JSON.stringify(response.data));
+      };
+      fetchCountries();
+    }
   }, []);
+  
 
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
