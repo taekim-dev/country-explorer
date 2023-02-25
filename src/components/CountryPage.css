@@ -1,0 +1,77 @@
+.country-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .country-flag img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .country-name {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .country-code {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .country-info {
+    background-color: #fff;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .country-info th,
+  .country-info td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+  
+  .country-info th {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .country-info td {
+    text-align: right;
+  }
+  
+  .explore-more {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .explore-more-link {
+    text-decoration: none;
+  }
+  
+  .explore-more-link button {
+    background-color: #5fa5e1;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  
+  .explore-more-link button:hover {
+    background-color: #4287c9;
+  }
+  
