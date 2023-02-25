@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { Table } from 'react-bootstrap';
 import './CountryPage.css';
 
-function CountryPage({ countries }) {
+function CountryPage() {
   const { code } = useParams();
   const [country, setCountry] = useState(null);
 

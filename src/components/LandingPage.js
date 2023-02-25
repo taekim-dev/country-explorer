@@ -4,7 +4,7 @@ import axios from "axios";
 
 import "./LandingPage.css";
 
-const LandingPage = () => {
+function LandingPage() {
   const [countries, setCountries] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -51,6 +51,8 @@ const LandingPage = () => {
       </div>
     </div>
   );
-};
+}
+
+
 
 export default LandingPage;
