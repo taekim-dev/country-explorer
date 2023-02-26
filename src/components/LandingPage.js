@@ -27,9 +27,15 @@ function LandingPage() {
     setSearchTerm(event.target.value);
   };
 
+  /* Try different search methods! kkorea => search term includes country name  */
   const filteredCountries = countries.filter((country) => {
     return country.name.toLowerCase().includes(searchTerm.toLowerCase());
-  });
+  }); 
+
+/** ideas: ranking by search terms "AB..." fuzzy search by ranking
+    
+    API pagination
+ */
 
   return (
     <div className="landing-container">
