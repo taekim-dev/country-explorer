@@ -22,7 +22,6 @@ function LandingPage() {
     }
   }, []);
   
-
   const handleSearch = (event) => {
     setSearchTerm(event.target.value);
   };
